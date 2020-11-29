@@ -19,13 +19,16 @@ include("data.php");?>
     <p>The <strong>Warhammer Age of Sigmar - Battle Generator</strong> is a web application designed to allow you to create battles for use in the Warhammer Age of Sigmar game by Games Workshop Limited.</p>
   </article>
 
+  <form method="post"> 
+        <input type="submit" name="generateBattle"
+                class="generateBattle" value="Generate Battle" /> 
+    </form> 
 
-    </header>
-<p>
-
-
-<h3><?=generateGame($battle_plan, $realm);?></h3>
-</p>
+    <?php
+    if (isset($_POST['generateBattle'])) {
+      generateBattle($battle_plan, $realm);
+}
+    ?> 
 
 </body>
 </html>
