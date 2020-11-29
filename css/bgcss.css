@@ -1,0 +1,60 @@
+body {
+    font-family: "Minion Pro", serif;
+    font-size: 10px;
+    background-image: url(../img/background-big.jpg);
+}
+.main-header {
+	font-size: 21px;
+	color: #fafafa;
+	text-shadow: 0px 0px 18px #000;
+	line-height: 1.2rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 0px;
+}
+.main-header img {
+	vertical-align: middle;
+}
+.main-header .logo {
+	position: relative;
+	margin-right: 27px;
+}
+.main-header .logo:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 87px; height: 52px;
+	right: -10px; top: 22px;
+	background: url('../img/unofficial.png');
+}
+.main-description {
+	width: 860px;
+	margin: 0px auto;
+	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 18px;
+}
+.main-disclaimer {
+	font-size: 0.73rem;
+	margin: 12px 0px;
+}
+.main-disclaimer .inner {
+	padding: 12px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.main-disclaimer p {
+	margin-top: 0px;
+	font-style: italic;
+}
+.main-disclaimer p em {
+	font-style: normal;
+}
+.main-disclaimer p:last-child {
+	margin-bottom: 0px;
+}
+
