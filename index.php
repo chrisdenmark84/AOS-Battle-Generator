@@ -28,8 +28,8 @@ include("data.php");?>
 
 <?php
 
-$numbattles =$_POST['quantity'];
   if (isset($_POST['generateBattle'])) {
+    $numbattles =$_POST['quantity'];
     generateBattle($battle_plan, $realm, $numbattles);
     }
   ?> 

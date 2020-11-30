@@ -14,7 +14,7 @@ function generateBattle($battle, $realm, $num_battles)
         $chosen_realm = array_rand($realm);
 
         //output the chosen realm and battleplan
-        echo "The Choas gods have chosen <b>$battle[$chosen_battle]</b> in the realm of <b>$realm[$chosen_realm]</b>.</h3>\n";
+        echo "<p>The Choas gods have chosen <b>$battle[$chosen_battle]</b> in the realm of <b>$realm[$chosen_realm]</b>.\n";
         $count++;
 }
 
