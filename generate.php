@@ -1,13 +1,13 @@
 <?php
 
 //generates a battle if count if less than 1 currently
-function generateBattle($battle, $realm)
+function generateBattle($battle, $realm, $num_battles)
 {
 
     $count = 1;
 
 //loop through battle generation twice
-    while ($count <= 1){
+    while ($count <= $num_battles){
     
         //select a random realm and battleplan from the array
         $chosen_battle = array_rand($battle);
