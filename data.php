@@ -2,7 +2,22 @@
 
 
 //defind realms and battleplans
-$battle_plan = ["Knife To The Heart", "Total Conquest", "Duality of Death", "Battle for the Pass", "Starstrike", "Scorched Earth", "Total Commitment", "Focal Points", "The Better Part of Valor", "Shifting Objectives", "Places of Arcane Power", "Relocation Orb", "The Bladges Edge", "Forcing the Hand"];
+$battle_plan = array(
+    array("Knife To The Heart", "GHB 2020"),
+    array("Total Conquest", "GHB 2020"),
+    array("Battle for the Pass", "GHB 2020"),
+    array("Starstrike", "GHB 2020"),
+    array("Scorched Earth", "GHB 2020"),
+    array("Focal Points", "GHB 2020"),
+    array("The Better Part of Valor", "GHB 2020"),
+    array("Shifting Objectives", "GHB 2020"),
+    array("Places of Arcane Power", "GHB 2020"),
+    array("The Bladges Edge", "GHB 2020"),
+    array("Total Commitment", "GHB 2020"),
+    array("Forcing the Hand", "GHB 2020")
+);
+
+
 $realm = ["Azyr", "Shyish", "Hysh", "Ulgu", "Chamon", "Ghyran", "Ghur", "Aqshy"];
 
 
