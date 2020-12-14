@@ -15,7 +15,7 @@ function generateBattle($battle, $realm, $num_battles)
 
         //output the chosen realm and battleplan
                 
-        echo "<b>". $battle[$chosen_battle][0] . "</b><i>(" . $battle[$chosen_battle] [1] . "</i>) in the realm of <b>" . $realm[$chosen_realm] . "</b><br>";
+        echo "<h3>Battle $count</h3><div class=\"form\"><p><b>". $battle[$chosen_battle][0] . "</b><i>(" . $battle[$chosen_battle] [1] . "</i>) in the realm of <b>" . $realm[$chosen_realm] . "</b><br></p></div><br>";
         $count++;
 }
 

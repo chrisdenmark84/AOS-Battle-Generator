@@ -16,13 +16,15 @@ include("data.php");?>
 
 <article class="main-description"><p>The <strong>Warhammer Age of Sigmar - Battle Generator</strong> is a web application designed to allow you to create battles for use in the Warhammer Age of Sigmar game by Games Workshop Limited.</p></article>
 
+<div class="form">
 <form method="post"> 
   <label for="quantity">How many battles do you want? :</label>
   <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
 
   <input type="submit" name="generateBattle" class="generateBattle" value="Generate Battle" /> 
   
-</form> 
+</form>
+</div> 
 
 
 
