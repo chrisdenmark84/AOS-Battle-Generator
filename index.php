@@ -18,15 +18,14 @@ include("data.php");?>
 
 <div class="form">
 <form method="post"> 
-  <label for="quantity">How many battles do you want? :</label>
+  <label for="quantity">Number of battles: </label>
   <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
 
   <input type="submit" name="generateBattle" class="generateBattle" value="Generate Battle" /> 
   
 </form>
 </div> 
-
-
+<div class="allresults">
 
 <?php
 
@@ -35,6 +34,8 @@ include("data.php");?>
     generateBattle($battle_plan, $realm, $numbattles);
     }
   ?> 
+
+</div>
 
 </body>
 </html>
