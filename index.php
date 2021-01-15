@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="css/bgcss.css" />
-    <title>AOS: Battle Generator</title>
+    <title>Warhammer Age of Sigmar - Battle Generator</title>
     <?php 
       include("generate.php");
       include("data.php");
