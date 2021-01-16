@@ -4,8 +4,8 @@
     <link rel="stylesheet" type="text/css" href="css/bgcss.css" />
     <title>Warhammer Age of Sigmar - Battle Generator</title>
     <?php 
-      include("generate.php");
-      include("data.php");
+      include("../src/generate.php");
+      include("../src/data.php");
     ?>
   </head>
   
