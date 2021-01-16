@@ -5,10 +5,8 @@
     <title>Warhammer Age of Sigmar - Battle Generator</title>
     <?php 
       include("../src/generate.php");
-      include("../src/data.php");
     ?>
   </head>
-  
   <body>
 
     <!-- Set the input to last generated, if none generated before set to 1 -->
@@ -43,11 +41,31 @@
       <?php
 
         if (isset($_POST['generateBattle'])) {
-        $numbattles =$_POST['quantity'];
-        generateBattle($battle_plan, $realm, $numbattles);
+          $numbattles =$_POST['quantity'];
+
+          // I'm creating a new instance of the Generate Class calld $generateBattles
+          $generateBattles = new generate;
+
+          //Im calling the generateBattle function and then looping through it here
+          foreach($generateBattles->generateBattle($numbattles) as $battle){
+
+            // Im echoing it out
+            echo sprintf(
+             '<div class="result">
+                <h3>Battle %d</h3>
+                <h4>Battleplan:</h4>
+                <p>%s %s</p>
+                <h4>Realm:</h4>
+                <p>%s</p>
+              </div>',
+              $battle['count'],
+              $battle['battle_plan_name'],
+              $battle['battle_plan_book'],
+              $battle['realm_name']
+            );
+          }
         }
       ?> 
     </div>
-
   </body>
 </html>
