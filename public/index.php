@@ -44,8 +44,7 @@
 
         if (isset($_POST['generateBattle'])) {
         $numbattles =$_POST['quantity'];
-        $generate = new generate;
-        $generate->generateBattle($battle_plan, $realm, $numbattles);
+        generateBattle($battle_plan, $realm, $numbattles);
         }
       ?> 
     </div>
