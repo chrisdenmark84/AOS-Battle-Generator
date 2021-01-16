@@ -1,28 +1,64 @@
 <?php
 
-//generates a battle if count if less than 1 currently
-function generateBattle($battle, $realm, $num_battles)
-{
-    //Ensure that there is a max of 10 battleplans, if not exit
-    if ($num_battles > 10) {
-        exit("<div class=\"result\"><h3>Error</h3><p>No, only 10 battles or less silly!</p>");
-    }
-    $count = 1;
+class generate{
 
-//loop through battle generation twice
-    while ($count <= $num_battles){
-    
-        //select a random realm and battleplan from the array
-        $chosen_battle = array_rand($battle);
-        $chosen_realm = array_rand($realm);
+    // Chris I've added data.php into this class, these are private variables, can be accessed by $this->battle_plan inside this class.
 
-        //output the chosen realm and battleplan
-                
-        echo "<div class=\"result\"><h3>Battle $count:</h3><h4>Battleplan:</h4><p>". $battle[$chosen_battle][0] . " (" . $battle[$chosen_battle] [1] . ")</p><h4>Realm:</h4> <p>" . $realm[$chosen_realm] . "</p></div>";
-        $count++;
+    private $battle_plan = array(
+        array("Knife To The Heart", "GHB 2020"),
+        array("Total Conquest", "GHB 2020"),
+        array("Battle for the Pass", "GHB 2020"),
+        array("Starstrike", "GHB 2020"),
+        array("Scorched Earth", "GHB 2020"),
+        array("Focal Points", "GHB 2020"),
+        array("The Better Part of Valor", "GHB 2020"),
+        array("Shifting Objectives", "GHB 2020"),
+        array("Places of Arcane Power", "GHB 2020"),
+        array("The Bladges Edge", "GHB 2020"),
+        array("Total Commitment", "GHB 2020"),
+        array("Forcing the Hand", "GHB 2020")
+    );
+
+
+    private $realm = ["Azyr", "Shyish", "Hysh", "Ulgu", "Chamon", "Ghyran", "Ghur", "Aqshy"];
+
+
+   //generates a battle if count if less than 1 currently
+    function generateBattle($num_battles)
+    {
+        //Ensure that there is a max of 10 battleplans, if not exit
+        if ($num_battles > 10) {
+            exit("<div class=\"result\"><h3>Error</h3><p>No, only 10 battles or less silly!</p>");
+        }
+        $count = 1;
+
+        // Created a new array inside this function
+        $return = [];
+
+
+    //loop through battle generation twice
+        while ($count <= $num_battles){
+        
+            //select a random realm and battleplan from the array
+            // @Chris I'm calling the arrays above like this, no need for them to go into the function, we wanna make the function as simple as possible. 
+            $chosen_battle = array_rand($this->battle_plan);
+            $chosen_realm  = array_rand($this->realm);
+
+
+            $return[$count]['battle_plan_name']  = $this->battle_plan[$chosen_battle][0];
+            $return[$count]['battle_plan_book']  = $this->battle_plan[$chosen_battle][1];
+            $return[$count]['realm_name']        = $this->realm[$chosen_realm];
+            $return[$count]['count']             = $count;
+            $count++;
+        }
+
+        return $return;
+
+    } 
+
 }
 
-}
+
 
 
 ?>
