@@ -1,1 +1,4 @@
 /docker/
+composer.phar
+composer.lock
+/vendor/
