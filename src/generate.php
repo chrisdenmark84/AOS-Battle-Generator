@@ -3,7 +3,10 @@
 //generates a battle if count if less than 1 currently
 function generateBattle($battle, $realm, $num_battles)
 {
-
+    //Ensure that there is a max of 10 battleplans, if not exit
+    if ($num_battles > 10) {
+        exit("<div class=\"result\"><h3>Error</h3><p>No, only 10 battles or less silly!</p>");
+    }
     $count = 1;
 
 //loop through battle generation twice
