@@ -18,7 +18,8 @@ class generate{
         array("Power in Numbers", "GHB 2021"),
         array("The Veins of Ghur", "GHB 2021"),
         array("Frontal Assault", "Core Rule Book 2021"),
-        array("Burn and Pillage", "Core Rule Book 2021")   
+        array("Burn and Pillage", "Core Rule Book 2021"),
+        array("Rising Power", "Core Rule Book 2021")
     );
 
 
