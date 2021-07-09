@@ -5,18 +5,20 @@ class generate{
     // Chris I've added data.php into this class, these are private variables, can be accessed by $this->battle_plan inside this class.
 
     private $battle_plan = array(
-        array("Knife To The Heart", "GHB 2020"),
-        array("Total Conquest", "GHB 2020"),
-        array("Battle for the Pass", "GHB 2020"),
-        array("Starstrike", "GHB 2020"),
-        array("Scorched Earth", "GHB 2020"),
-        array("Focal Points", "GHB 2020"),
-        array("The Better Part of Valor", "GHB 2020"),
-        array("Shifting Objectives", "GHB 2020"),
-        array("Places of Arcane Power", "GHB 2020"),
-        array("The Bladges Edge", "GHB 2020"),
-        array("Total Commitment", "GHB 2020"),
-        array("Forcing the Hand", "GHB 2020")
+        array("Marking Territory", "GHB 2021"),
+        array("Savage Gains", "GHB 2021"),
+        array("First Blood", "GHB 2021"),
+        array("Power Struggle", "GHB 2021"),
+        array("Survival of the Fittest", "GHB 2021"),
+        array("Tectonic Interference", "GHB 2021"),
+        array("Apex Predators", "GHB 2021"),
+        array("The Vice", "GHB 2021"),
+        array("Tooth and Nail", "GHB 2021"),
+        array("Feral Foray", "GHB 2021"),
+        array("Power in Numbers", "GHB 2021"),
+        array("The Veins of Ghur", "GHB 2021"),
+        array("Frontal Assault", "Core Rule Book 2021"),
+        array("Burn and Pillage", "Core Rule Book 2021"),   
     );
 
 
