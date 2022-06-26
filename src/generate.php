@@ -5,18 +5,18 @@ class generate{
     // Chris I've added data.php into this class, these are private variables, can be accessed by $this->battle_plan inside this class.
 
     private $battle_plan = array(
-        array("Marking Territory", "GHB 2021"),
-        array("Savage Gains", "GHB 2021"),
-        array("First Blood", "GHB 2021"),
-        array("Power Struggle", "GHB 2021"),
-        array("Survival of the Fittest", "GHB 2021"),
-        array("Tectonic Interference", "GHB 2021"),
-        array("Apex Predators", "GHB 2021"),
-        array("The Vice", "GHB 2021"),
-        array("Tooth and Nail", "GHB 2021"),
-        array("Feral Foray", "GHB 2021"),
-        array("Power in Numbers", "GHB 2021"),
-        array("The Veins of Ghur", "GHB 2021"),
+        array("The Prize of Galet", "Seaon 1 22-23"),
+        array("The Realmstone Cache", "Seaon 1 22-23"),
+        array("Battlelines Drawn", "Seaon 1 22-23"),
+        array("The Lurkers Below", "Seaon 1 22-23"),
+        array("In the Presence of Idols", "Seaon 1 22-23"),
+        array("The Nidus Paths", "Seaon 1 22-23"),
+        array("The Mighty and the Cunning", "Seaon 1 22-23"),
+        array("Head-on Collision", "Seaon 1 22-23"),
+        array("Won't Back Down", "Seaon 1 22-23"),
+        array("The Silksteel Nests", "Seaon 1 22-23"),
+        array("Close to the Chest", "Seaon 1 22-23"),
+        array("Turf War", "Seaon 1 22-23"),
         array("Frontal Assault", "Core Rule Book 2021"),
         array("Burn and Pillage", "Core Rule Book 2021"),
         array("Rising Power", "Core Rule Book 2021")
@@ -60,8 +60,3 @@ class generate{
     } 
 
 }
-
-
-
-
-?>
